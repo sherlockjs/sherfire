@@ -1,0 +1,1 @@
+export { extendFirestore } from './extend';
