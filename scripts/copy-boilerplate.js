@@ -13,7 +13,7 @@ dirs.forEach(async dir => {
         copyFile(`${from}/README.md`, `${to}/README.md`),
         readFile(`${from}/package.json`, { encoding: 'utf8' })
             .then(f => f
-                .replace('"private": true', '"private": false')
+                // .replace('"private": true', '"private": false')
                 .replace(/0\.0\.0-PLACEHOLDER/g, version),
             )
             .then(f => writeFile(`${to}/package.json`, f)),

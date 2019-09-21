@@ -14,10 +14,11 @@ x-deploy: &deploy
   api_key:
     secure: AeQCd1yb7E+MQqb1uh5hFnkN4A94aWKeaEQ9ErR3sTN64yZtE+tuKCy29hSe3AeBtM7LyDBjbXmPl1lScWWtPKXfXR6MWAQID1sY0H3ISLqjJi6gturmrMWTgYJwBBFHRNuSqvlGYGmnDGwIEgjNJeMWlGTTtgASNWggX7xQep00udDn6T5ix8XIzFGxh91LvuTTwhOI0sETMtKQVULJj9L2j7/kEXsXNR0BM5tnlSOMZ2ZK3Od0YX+hMU89/cIfvpdcSVFjkwLJbDFOgHBoKCP3REL3afxivkv32W+hFjMeqktae76xYpjr/mo3aB9QFT3l+H3XBnRDslLJX9c/9+GdiW7lq0gqC0T+kdZ48Z6NtGYtNGj7SvtkWKvmFjO4/6az+OV3zeiShk43MBF7X9G9MQOprRmKnt7kvyszXOqFFq6rhT8OPV7zldcEOor1cDjCO2AjkG7BhVC3rXjDN8MHh3D8Fo4WWC4fsciu4tTTM7GYFpcd8ZjFNjLu92uL1OzPCMc28cbXAyQpb0HcSVG3cOxMsl8UtMeJk4ZuyuRJUXanuC0OTjvK0QHuH8rbO3B3TxSxCV2U091OCWgwfz4oMibzfI+cuSg8hYJH8awbqZ5VNYIJkCTjEJzsj/MzdnnsSJ5nPGkBeeGwFPv4WbccPNfRC9/7+u7uTZh3oQ8=
   on:
-    branch: master
+    all_branches: true
+    # branch: master
     node: 10
 deploy:
 - <<: *deploy
-  working_dir: dist/sherfire
+  local_dir: dist/sherfire
 - <<: *deploy
-  working_dir: dist/ng-sherfire
+  local_dir: dist/ng-sherfire
