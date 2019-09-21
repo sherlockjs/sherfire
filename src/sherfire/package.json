@@ -1,10 +1,15 @@
 {
-    "version": "1.0.0-beta.0",
-    "scripts": {
-        "build": "tsc",
-        "lint": "tslint -c tslint.yaml 'src/**/*.ts'",
-        "test": "jest --ci"
-    },
+    "name": "@sherlockjs/sherfire",
+    "version": "0.0.0-PLACEHOLDER",
+    "description": "A Firebase API based on Sherlock.",
+    "main": "sherfire.cjs.js",
+    "module": "sherfire.esm.js",
+    "browser": "sherfire.umd.js",
+    "typings": "index.d.ts",
+    "files": [
+        "sherfire.{cjs,esm,umd}.*",
+        "**/*.d.ts"
+    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/sherlockjs/sherfire.git"
@@ -12,23 +17,19 @@
     "keywords": [
         "sherlock",
         "derivable",
-        "firebase",
-        "angular"
+        "firebase"
     ],
     "license": "Apache-2.0",
     "bugs": {
         "url": "https://github.com/sherlockjs/sherfire/issues"
     },
     "homepage": "https://github.com/sherlockjs/sherfire#readme",
-    "devDependencies": {
-        "@angular/core": "^8.2.7",
+    "dependencies": {
+        "tslib": "^1.9.0"
+    },
+    "peerDependencies": {
         "@politie/sherlock": "^3.0.0-beta.1",
         "@politie/sherlock-utils": "^3.0.0-beta.1",
-        "@types/jest": "^24.0.18",
-        "firebase": "^6.6.2",
-        "jest": "^24.9.0",
-        "ts-jest": "^24.1.0",
-        "tslint": "^5.20.0",
-        "typescript": "^3.6.3"
+        "firebase": "^6.6.2"
     }
 }
