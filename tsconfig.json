@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "dist",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es2018",
+        "module": "esnext",
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "baseUrl": "src",
+        "paths": {
+            "@sherlockjs/sherfire": [
+                "sherfire"
+            ],
+            "@sherlockjs/ng-sherfire": [
+                "ng-sherfire"
+            ]
+        }
+    },
+    "exclude": [
+        "**/*.spec.ts"
+    ]
+}

@@ -1,2 +1,2 @@
 # sherfire
-A Firebase and API based on Sherlock
+A Firebase API based on Sherlock
