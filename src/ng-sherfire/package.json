@@ -1,15 +1,10 @@
 {
+    "private": true,
     "name": "@sherlockjs/ng-sherfire",
     "version": "0.0.0-PLACEHOLDER",
     "description": "An Angular Firebase API based on Sherlock/Sherfire.",
-    "main": "ng-sherfire.cjs.js",
-    "module": "ng-sherfire.esm.js",
-    "browser": "ng-sherfire.umd.js",
+    "main": "index.js",
     "typings": "index.d.ts",
-    "files": [
-        "ng-sherfire.{cjs,esm,umd}.*",
-        "**/*.d.ts"
-    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/sherlockjs/sherfire.git"
@@ -26,7 +21,8 @@
     },
     "homepage": "https://github.com/sherlockjs/sherfire#readme",
     "dependencies": {
-        "tslib": "^1.9.0"
+        "tslib": "^1.9.0",
+        "@sherlockjs/sherfire": "0.0.0-PLACEHOLDER"
     },
     "peerDependencies": {
         "@politie/sherlock": "^3.0.0-beta.1",

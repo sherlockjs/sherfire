@@ -1,15 +1,10 @@
 {
+    "private": true,
     "name": "@sherlockjs/sherfire",
     "version": "0.0.0-PLACEHOLDER",
     "description": "A Firebase API based on Sherlock.",
-    "main": "sherfire.cjs.js",
-    "module": "sherfire.esm.js",
-    "browser": "sherfire.umd.js",
+    "main": "index.js",
     "typings": "index.d.ts",
-    "files": [
-        "sherfire.{cjs,esm,umd}.*",
-        "**/*.d.ts"
-    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/sherlockjs/sherfire.git"
