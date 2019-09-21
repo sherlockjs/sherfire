@@ -19,10 +19,13 @@
         "noUnusedParameters": true,
         "resolveJsonModule": true,
         "esModuleInterop": true,
-        "baseUrl": "./src",
+        "baseUrl": "src",
         "paths": {
             "@sherlockjs/sherfire": [
-                "./sherfire"
+                "sherfire"
+            ],
+            "@sherlockjs/ng-sherfire": [
+                "ng-sherfire"
             ]
         }
     }
