@@ -19,6 +19,6 @@ x-deploy: &deploy
     node: 10
 deploy:
 - <<: *deploy
-  local_dir: dist/sherfire
+  src: dist/sherfire
 - <<: *deploy
-  local_dir: dist/ng-sherfire
+  src: dist/ng-sherfire
