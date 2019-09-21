@@ -1,6 +1,6 @@
 {
     "private": true,
-    "version": "1.0.0-beta.0",
+    "version": "1.0.0-alpha.0",
     "scripts": {
         "clean": "rimraf coverage dist",
         "copy": "node scripts/copy-boilerplate.js",
