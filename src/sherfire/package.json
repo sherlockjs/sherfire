@@ -1,8 +1,11 @@
 {
-    "private": true,
     "name": "@sherlockjs/sherfire",
     "version": "0.0.0-PLACEHOLDER",
     "description": "A Firebase API based on Sherlock.",
+    "private": true,
+    "publishConfig": {
+        "access": "public"
+    },
     "main": "index.js",
     "typings": "index.d.ts",
     "repository": {

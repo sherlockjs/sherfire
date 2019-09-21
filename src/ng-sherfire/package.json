@@ -1,8 +1,11 @@
 {
-    "private": true,
     "name": "@sherlockjs/ng-sherfire",
     "version": "0.0.0-PLACEHOLDER",
     "description": "An Angular Firebase API based on Sherlock/Sherfire.",
+    "private": true,
+    "publishConfig": {
+        "access": "public"
+    },
     "main": "index.js",
     "typings": "index.d.ts",
     "repository": {
