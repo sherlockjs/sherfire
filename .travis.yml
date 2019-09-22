@@ -3,16 +3,14 @@ node_js:
 - '12'
 - '10'
 script: npm run ci
-cache:
-  directories:
-  - "~/.npm"
+cache: npm
 
 x-deploy: &deploy
   edge: true
   provider: npm
   email: njirem@gmail.com
-  api_key:
-    secure: "AEK3xzjOGiu8rP/1MhQ19Z1hYPMZyDiQZWovvDacgXOG5etjo1qGzN3QFM+KJAy9B645ObUbtOQa7aCarQiZUThH+AIqb75u3J9NKr/xh80lA80bbiu0plmFerxbzfm4WkSriSga51HRauA3SDAZ91iXCPGwtsumORnwNxU6BM3o2rGG0HEtIOogmK4/TdQDcTliAAHKXfrwvjCt9SlXMLb4t97bQ4QN0Dw5Bv2GJZKuKEmLbV/hFvgw1H00tyEXyqh8nPWbSRs+Z1wfp1EjzatPSOaW5rMncS665Z5e/fKIj9B+yDptYl5gM8CwFQoCJvn24ticbjmeAFhhm3SjdGA6v8tC/UHDo1Do8GBLYVA7a6FVjfYOl4PHhsv6Z4R4V85B7SOmo/3E9QBHKal+sIX2Wx2lXFpvOw72QAlzzxv4W7VskqTq+sghwGqWS1uAJb8wheBnUwQbw5pMKKYDokOd7PnpXu5J1akh2rXpdZc5UH0lbDhAGvespQU2l3QF4UECAp+REcdfMBnS/02LbX6ao5kow3YNrY+EPJw2poRUSQOP+5Z9K12F15u6NPpL7I4faICpXr9FOgwStyJb9zNEqQDURp2HCbo6RFEAcOyVNDmRNMTCIk+OpqENm3bSH8iJ2e/MWV0A+tWXMGiUYolMux1UuBT/joSnKfj+DfA="
+  # api_key:
+  #   secure: "AEK3xzjOGiu8rP/1MhQ19Z1hYPMZyDiQZWovvDacgXOG5etjo1qGzN3QFM+KJAy9B645ObUbtOQa7aCarQiZUThH+AIqb75u3J9NKr/xh80lA80bbiu0plmFerxbzfm4WkSriSga51HRauA3SDAZ91iXCPGwtsumORnwNxU6BM3o2rGG0HEtIOogmK4/TdQDcTliAAHKXfrwvjCt9SlXMLb4t97bQ4QN0Dw5Bv2GJZKuKEmLbV/hFvgw1H00tyEXyqh8nPWbSRs+Z1wfp1EjzatPSOaW5rMncS665Z5e/fKIj9B+yDptYl5gM8CwFQoCJvn24ticbjmeAFhhm3SjdGA6v8tC/UHDo1Do8GBLYVA7a6FVjfYOl4PHhsv6Z4R4V85B7SOmo/3E9QBHKal+sIX2Wx2lXFpvOw72QAlzzxv4W7VskqTq+sghwGqWS1uAJb8wheBnUwQbw5pMKKYDokOd7PnpXu5J1akh2rXpdZc5UH0lbDhAGvespQU2l3QF4UECAp+REcdfMBnS/02LbX6ao5kow3YNrY+EPJw2poRUSQOP+5Z9K12F15u6NPpL7I4faICpXr9FOgwStyJb9zNEqQDURp2HCbo6RFEAcOyVNDmRNMTCIk+OpqENm3bSH8iJ2e/MWV0A+tWXMGiUYolMux1UuBT/joSnKfj+DfA="
   on:
     branch: test
     node: 10
