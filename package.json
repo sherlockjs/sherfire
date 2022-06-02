@@ -28,7 +28,7 @@
     },
     "homepage": "https://github.com/sherlockjs/sherfire#readme",
     "devDependencies": {
-        "@angular/core": "^8.2.7",
+        "@angular/core": "^11.0.5",
         "@politie/sherlock": "^3.0.0-beta.1",
         "@politie/sherlock-utils": "^3.0.0-beta.1",
         "@types/jest": "^24.0.18",
